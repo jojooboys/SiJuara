@@ -51,10 +51,10 @@ public class ProfilController {
     }
 
     public boolean insertProfil(Profil profil) {
-        String sql = "INSERT INTO profil (fullname, kelas, jenis_kelamin, alamat) VALUES (?, ?, ?, ?)";
+        String sql = "INSERT INTO profil (username, kelas, jenis_kelamin, alamat) VALUES (?, ?, ?, ?)";
         try (Connection conn = Database.connect();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, profil.getFullname());
+            pstmt.setString(1, profil.getUsername());
             pstmt.setString(2, profil.getKelas());
             pstmt.setString(3, profil.getJenisKelamin());
             pstmt.setString(4, profil.getAlamat());
