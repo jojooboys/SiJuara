@@ -37,6 +37,11 @@ public class HomePanel extends javax.swing.JPanel {
         controller.displayFullname();
         setTextPaneAlignment();
         addActionListener();
+
+        if (user.isAdmin() == 1) {
+            jLabel3.setVisible(false);  
+            profilButton.setVisible(false);
+        }
     }
         
     public HomePanel(JScrollPane contentScrollPane, User user, DashboardClient dashboardClient) {
@@ -48,6 +53,11 @@ public class HomePanel extends javax.swing.JPanel {
         controller.displayFullname();
         setTextPaneAlignment();
         addActionListener();
+
+        if (user.isAdmin() == 1) {
+            jLabel3.setVisible(false);  
+            profilButton.setVisible(false);
+        }
     }
     
     private void addActionListener() {
