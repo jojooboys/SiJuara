@@ -82,14 +82,21 @@ public class cetakDataAdminController {
         String path = home + "/SiJuara.csv";
 
         try (FileWriter csvWriter = new FileWriter(path)) {
+            // Write header
             for (int i = 0; i < model.getColumnCount(); i++) {
                 csvWriter.write(model.getColumnName(i) + ",");
             }
             csvWriter.write("\n");
 
+            // Write data rows
             for (int i = 0; i < model.getRowCount(); i++) {
                 for (int j = 0; j < model.getColumnCount(); j++) {
-                    csvWriter.write(model.getValueAt(i, j).toString() + ",");
+                    Object value = model.getValueAt(i, j);
+                    if (value != null) {
+                        csvWriter.write(value.toString() + ",");
+                    } else {
+                        csvWriter.write(",");
+                    }
                 }
                 csvWriter.write("\n");
             }
