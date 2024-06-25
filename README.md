@@ -1,6 +1,7 @@
-# Java Login & Sign Up GUI
+# Si Juara (Sistem Jalur masUk Aktifitas luaR Akademik)
+Project ini dibuat dalam rangka memenuhi Ujian Akhir Semester mata kuliah Pemrograman Berorientasi Objek
 
-## JAVA - How To Design Login And Register Form In Java Netbeans
+## Project in
 
 
 version: 1.0.0
