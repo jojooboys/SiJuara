@@ -1,22 +1,29 @@
 # Si Juara (Sistem Jalur masUk Aktifitas luaR Akademik)
-Project ini dibuat dalam rangka memenuhi Ujian Akhir Semester mata kuliah Pemrograman Berorientasi Objek
 
-## Project in
+## Deskripsi Proyek
+Si Juara adalah aplikasi Java yang dibuat menggunakan Apache NetBeans sebagai bagian dari Ujian Akhir Semester (UAS) mata kuliah Pemrograman Berorientasi Objek. Aplikasi ini memiliki dua jenis login: 
+- **Client**: Dapat mendaftar Unit Kegiatan Mahasiswa (UKM) melalui form yang ada di aplikasi serta bisa mengupdate atau menghapus form yang dia kirim.
+- **Admin**: Bisa menerima, menunda, dan menolak status form pendaftaran, serta mencetak seluruh form yang ada di database menjadi PDF, CSV, dan XLSX.
 
+## Fitur
+- Form pendaftaran UKM tersimpan dalam database SQLite bernama `UASpbo.db`.
+- CRUD form untuk client.
+- Ekspor data form ke PDF menggunakan iTextPDF.
+- Ekspor data tabel ke CSV dan XLSX.
 
-version: 1.0.0
+## Instruksi Instalasi
+Saat ini, proyek ini belum dibuild ke dalam format executable (EXE atau JAR). Untuk menjalankan proyek:
+1. Clone repositori ini.
+2. Buka proyek menggunakan Apache NetBeans.
+3. Jalankan proyek dari Apache NetBeans.
 
-## TECHNOLOGIES
+## Cara Penggunaan
+1. Jalankan aplikasi.
+2. **Login**: Masukkan kredensial jika sudah memiliki akun yang tersimpan di database.
+3. **Sign Up**: Daftar akun baru jika belum memiliki akun di database.
+4. Setelah login, client dapat mengisi, memperbarui, atau menghapus form pendaftaran UKM mereka sendiri.
+5. Admin dapat mengelola status pendaftaran dan mengekspor data.
 
-1. Java
-1. Swing
-1. Java JFrame
-
-
-## Full Tutorial
-
-[On Youtube](https://youtu.be/jHSBrX8lLWk)
-
-## Authors
-
-[Elias Abdurrahman](https://github.com/codingWithElias)
+## Kontak
+Jika ada pertanyaan atau membutuhkan bantuan, silakan hubungi:
+- Email: [jordandwifebri@gmail.com](mailto:jordandwifebri@gmail.com)
